@@ -1,0 +1,312 @@
+
+@keyframes show{
+    0%{
+        height: 0px;
+        border-top-width: 0px
+    }
+     100%{
+        height: 229px;
+        border-top-width: 1px
+    }
+}
+
+@keyframes hide{
+    0%{
+        height: 229px;
+        border-top-width: 1px
+    }
+     100%{
+        height: 0px;
+        border-top-width: 0px
+    }
+}
+.header{
+    height: 100px;
+    position: relative;
+    z-index: 20;
+    &::before{
+        content: " ";
+        display: table;
+    }
+    .header-logo{
+        width:62px;
+        margin-top: 22px;   
+        .logo{
+            display: block;
+            width:55px;
+            height:55px;
+            background: url('../../basis/image/mi-logo.png') no-repeat 2px 2px #ff6700;
+            opacity: 1;       
+            &::after{
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                width: 55px;
+                height: 55px;
+                content: '';
+            
+            }
+        }
+        span{
+            display: block;
+            text-indent: -9999px;
+        }
+    }
+    .header-nav{
+        
+        width:800px;     
+        .nav-list{ 
+            display: table;
+            height:88px;
+            padding: 12px 0 0 30px; 
+            width:775px;
+            font-size: 16px;
+            margin: 0;
+            .nav-category{
+                font-size: 14px;
+                width:127px;
+                padding-right: 15px;
+                position: relative;
+                .link-category{
+                    visibility: hidden;
+                    display: block;
+                    padding: 26px 0 38px;
+                    text-align: right;
+
+                }
+                .site-category{
+                    width:234px;
+                    height:460px;
+                    position: absolute;
+                    top:88px;
+                    left:-92px;
+                    background-color: rgba(0,0,0,0.6);
+                    z-index: 10;
+                    .category-list{
+                        padding: 20px 0;                        
+                        .title{
+                            position: relative;
+                            display: block;
+                            color:#fff;
+                            padding-left: 30px;
+                            line-height: 42px;
+                            height:42px;
+                            i{
+                                color: rbga(255,255,255,.5);
+                                position: absolute;
+                                top:13px;
+                                right:20px;
+                                line-height: 1;
+                            }
+                        }
+                        
+                        .children{
+                            display: none;
+                            position: absolute;
+                            left:234px;
+                            top:0;
+                            width:992px;
+                            height: 460px;
+                            background: #fff;
+                            .child-list{
+                                float: left;
+                                height: 458px;
+                                li{
+                                    width: 265px;
+                                    .link{
+                                        display: block;
+                                        padding: 18px 20px;
+                                        img{
+                                            width: 40px;
+                                            height: 40px;
+                                            margin-right: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .active{
+                            .children{
+                                display: block;
+                            }
+                            .title{
+                                background: #ff6700;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav-item{   
+                .link{
+                    padding: 26px 10px 38px;
+                    display: block;
+                    
+                    &:hover{
+                        color:#ff6700;
+                    }
+                }                
+                .item-children{
+                    display: none;
+                }       
+                
+            }  
+        }
+    }
+    .header-search{
+        width:296px;
+        margin-top: 25px;        
+        .search-form{
+            width:296px;
+            height: 50px;
+            position: relative;
+            .search-text{
+                box-sizing: content-box;
+                width: 223px;
+                height: 48px;
+                position: absolute;
+                top:0;
+                right: 51px;
+                padding: 0 10px;
+                border: 1px solid #e0e0e0;
+                outline: 0;
+                line-height: 48px;                 
+            }
+            &:hover{
+                .search-submit{
+                    border-color: #b0b0b0;
+                }
+                .search-text{
+                    border-color: #b0b0b0;
+                }
+            }
+            .search-submit{
+                
+                width:51px;
+                height:50px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #fff;
+                border: 1px solid #e0e0e0;
+                border-left: 0;
+                &:hover{
+                        color: #fff;
+                        border-color: #ff6700;
+                        background-color: #ff7600;
+                    }
+                .icon-chaxun{
+                    font-weight: bold;
+                    line-height: 24px;
+                }
+            }
+            .search-hot-word{
+                position: absolute;
+                top:14px;
+                right:62px;
+                z-index: 2;
+                .hot-word-item{
+                    display: inline-block;
+                    font-size: 12px;
+                    background-color: #eee;
+                    color: #757575;
+                    padding: 0 5px;
+                    margin-left: 5px;
+                    &:hover{
+                        color: #fff;
+                        background-color: #ff6700;
+                    }
+                }
+            }
+            .keyword-list{
+                position: absolute;
+                top:50px;
+                left:0;
+                width: 245px;
+                border:1px solid #ff6700;
+                background-color: #fff;
+                border-top: 0;
+                z-index: 28;
+                font-size: 12px;
+                .result-list{
+                    margin: 0;
+                    a{
+                    position: relative;
+                    display: block;
+                    padding:6px 15px;
+                    color:#424242;
+                    span{
+                        position: absolute;
+                        top:0;
+                        right:10px;
+                    }
+                }
+            }
+            }
+        }
+    }
+    .nav-menu{
+        height: 0px;
+        transition: height .5s;
+        position: absolute;
+        overflow: hidden;
+        left:0;
+        top:100px;
+        background-color: #fff;
+        min-width:1226px;
+        border-top: 1px solid #e0e0e0;
+        z-index: 20;
+        text-align: center;
+        background-color: #fff;
+        &.nav-menu-active{
+            height: 229px;
+            transition: height .5s;
+            box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        }
+        :not(:first-child).ant-col-4:before{
+            position: absolute;
+            left: 0;
+            top: 35px;
+            z-index: 1;
+            width: 1px;
+            height: 100px;
+            content: "";
+            background-color: #e0e0e0;
+        }                    
+        .figure{
+            width: 160px;
+            padding-top:35px ;
+            margin-bottom: 16px;
+            a{
+                display: block;
+                width:160px;
+                padding: 0 22px;
+                img{
+                    width:160px;
+                    height:110px;
+                }
+            }                        
+        }
+        .flags{
+            position: absolute;
+            top:0;                       
+            width:100%;
+            font-size: 12px;
+            .flag{
+                border: 1px solid #ff6700;
+                height: 18px;
+                line-height: 14px;
+                color: #ff6700;
+                padding: 1px 20px;
+                display: inline-block;
+            }
+        }
+        .price{
+            margin: 0;
+            line-height: 20px;
+            color: #ff6700;
+        }
+    }
+
+}

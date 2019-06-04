@@ -1,0 +1,126 @@
+.login-panel{
+    position: relative;
+    padding-top: 130px;
+    width: 1130px;
+    margin: 0 auto;
+    .form{
+        position: relative;
+        width:410px;
+        height:524px;
+        margin: 0 0 0 auto;
+        font-size: 14px;
+        z-index: 4;
+        background-color: #fff;
+        .mainbox{
+            .nav-tab{
+                padding: 27px 0 24px;
+                text-align: center;
+                font-size: 24px;
+                .sep{
+                    margin: 0 35px 0 42px;
+                    border: 1px solid #e0e0e0;
+
+                }
+                .link{
+                    color: #666;
+                    &:hover{
+                        color: #f56600;
+                    }
+                }
+                .active{
+                    color: #f56600;
+                }
+            }
+            .login-area{
+                width: 348px;
+                margin: 0 auto;
+                position: relative;
+                .input{
+                    margin-bottom: 14px;
+                    display: block;
+                    .ant-input{
+                        height: 50px;
+                        line-height: 22px;
+                        padding: 13px 16px 13px 14px;
+                        border-radius: 0;
+                        &:focus{
+                            box-shadow: none;
+                            border-color: #d9d9d9;
+                        }
+                        &:hover{
+                            border-color: #d9d9d9;
+                        }
+                    }
+                    .ant-btn{
+                        height: 50px;
+                        line-height: 22px;
+                        a{
+                            color: #003ab5;
+                        }
+                        &:hover{
+                            border-color: #d9d9d9;
+                        }
+                    }
+                    .ant-input-group{
+                        top:0;
+                        button{
+                            padding: 15px 20px;
+                        }
+                    }
+                }
+                .login-btn{
+                    padding-top: 10px;
+                    .ant-btn-primary{
+                        border-radius: 0;
+                        height: 50px;
+                        margin-bottom: 14px;
+                        background-color: #ff7600;
+                        border-color:#ff7600;
+                    }
+                }
+                
+            }
+            .other-method{
+                margin-top: -5px;
+                .pan{
+                    .right{
+                        a{
+                            color: #999;
+                        }
+                        .sep{
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+            .others{
+                position: absolute;
+                top:350px;
+                width: 100%;
+                .title{
+                    border-top: 1px solid #e0e0e0;
+                    padding-top: 10px;
+                    legend{
+                        font-size:14px;
+                        width:fit-content;
+                        margin: 0;
+                    }
+                }
+                .links{
+                    padding-top: 3px;
+                    text-align: center;
+                    a{
+                        display: inline-block;
+                        height: 30px;
+                        width: 30px;
+                        margin: 0 17px;
+                        i{
+
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

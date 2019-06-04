@@ -1,0 +1,11 @@
+export const RECIEVE_NAVLIST='receive_navlist';
+export const RECIEVE_HOTWORD='receive_hotword';
+export const RECIEVE_KEYWORD='receive_keyword';
+export const RECIEVE_CATEGORY='recieve_category';
+export const RECIEVE_SLIDER='recieve_slider';
+export const RECIEVE_SUB='recieve_sub';
+export const RECIEVE_MAIN='recieve_main';
+export const RECIEVE_FOOTER='recieve_footer'
+export const LOGIN='login'
+export const ERROR_MSG='error_msg'
+export const LOGOUT='logout'
