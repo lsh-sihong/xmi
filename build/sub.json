@@ -1,0 +1,52 @@
+{
+    "channel":[
+        {
+            "href":"http://www.mi.com/compare/",
+            "icon":"icon-xuangoushouji",
+            "text":"选购手机"
+        },
+        {
+            "href":"http://qiye.mi.com/",
+            "icon":"icon-liwu",
+            "text":"企业团购"
+        },
+        {
+            "href":"//order.mi.com/f",
+            "icon":"icon-fma",
+            "text":"F码通道"
+        },
+        {
+            "href":"https://www.mi.com/mimobile/",
+            "icon":"icon-mifenqia-copy",
+            "text":"米粉卡"
+        },
+        {
+            "href":"//huanxin.mi.com",
+            "icon":"icon-yijiuhuanxin",
+            "text":"以旧换新"
+        },
+        {
+            "href":"http://recharge.10046.mi.com/",
+            "icon":"icon-huafeichongzhi",
+            "text":"话费充值"
+        }        
+    ],
+    "promo":[
+        {
+            "href":"https://www.mi.com/redmi7/?cfrom=search",
+            "pic":"//i1.mifile.cn/a4/xmad_15566290288789_EQdZS.jpg",
+            "text":"红米7送耳机"
+        },
+        {
+            "href":"https://www.mi.com/mi9se/",
+            "pic":"//i1.mifile.cn/a4/xmad_15566163158698_gwoiA.jpg",
+            "text":"小米9 se"
+        },
+        {
+            "href":"https://item.mi.com/product/4348.html",
+            "pic":"//i1.mifile.cn/a4/xmad_15513348763999_sTLBm.jpg",
+            "text":"扫地机器人到手价 1499"
+        }
+
+    ]
+}
